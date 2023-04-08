@@ -1,0 +1,13 @@
+
+version: 2
+
+models:
+  - name: fct_vendas
+    description: Essa é a dimensão com dados de vendas.
+    columns:
+      - name: sk_venda
+        description: Essa é a chave surrogate key da tabela.
+        tests:
+          - unique
+          - not_null
+              
